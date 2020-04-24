@@ -1,0 +1,22 @@
+# Using Gaussian processes for fitting drug response curves
+
+A Python package for fitting drug response curves using Gaussian processes. The Gaussian process fitting is done using the GPflow package.
+
+## Pre-requisites:
+Python 3.6.9
+Tensorflow 1.14.0 (not compatible with Tensorflow 2)
+GPflow 1.5.1 
+
+Installation instructions for GPflow can be found here:
+https://github.com/GPflow/GPflow
+
+Installation instructions for tensorflow can be found here:
+https://www.tensorflow.org/install/
+
+However, the default installation for GPflow should in principle install tensorflow as a dependency, so try that first. Note that you do not need the GPU libraries for tensorflow to run GPflow or the drug response fitting code.
+
+## Running the code
+
+Documentation is still in development, but `run_gp_fitting.py` is a script that fits the an example dataset of 10 dose-response curves, returning estimates for AUC and IC50 and saving a plot for each curve. Note that this requires the GDSC raw drug response dataset as input data, placed in the data folder.
+
+Any warnings about depreciations when running the code are due to issues between the tensorflow and GPflow libraries; these should be resolved when I update the code to use Tensorflow 2.0 (work in progress).
