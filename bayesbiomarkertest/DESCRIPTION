@@ -1,0 +1,29 @@
+Package: bayesbiomarkertest
+Title: Bayesian Biomarker Testing
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Frank",
+           family = "Dondelinger",
+           role = c("aut", "cre"),
+           email = "fdondelinger.work@gmail.com",
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: This package takes as input drug response summary measurements (such as IC50 or area under the drug-response curve) together with the standard errors of these measurements as well as biomarker measurements, and performs Bayesian inference using a hierarchical linear model to estimate the association between the biomarkers and the drug response.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Biarch: true
+Depends: 
+    R (>= 3.4.0)
+Imports: 
+    methods,
+    Rcpp (>= 0.12.0),
+    rstan (>= 2.18.1),
+    rstantools (>= 2.0.0)
+LinkingTo: 
+    BH (>= 1.66.0),
+    Rcpp (>= 0.12.0),
+    RcppEigen (>= 0.3.3.3.0),
+    rstan (>= 2.18.1),
+    StanHeaders (>= 2.18.0)
+SystemRequirements: GNU make
+RoxygenNote: 7.0.2
